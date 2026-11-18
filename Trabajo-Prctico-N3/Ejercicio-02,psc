@@ -1,0 +1,19 @@
+Algoritmo Ejercicio2
+	Definir T, i, suma,promedio Como Real;
+	Dimension T[7];
+	suma = 0;
+	Para i = 1 Hasta 7 Hacer
+		Escribir "Ingrese la temperatura del dia ", i;
+		Leer T[i];
+		suma = suma + T[i];
+	FinPara
+	promedio = suma / 7;
+	Escribir "El promedio semanal es: ", promedio;
+	Para i = 1 Hasta 7 Hacer
+		Escribir "Dia ", i, ": ", T[i], " grados";
+		
+		Si T[i] > promedio Entonces
+			Escribir "Supero el promedio";
+		FinSi
+	FinPara
+FinAlgoritmo
